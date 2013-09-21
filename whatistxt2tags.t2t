@@ -2,7 +2,7 @@
 
 
 %!target: md
-%!options: --outfile ../README.md 
+%!options: --outfile README.md 
 
 
 = What is Txt2tags? =
