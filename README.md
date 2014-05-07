@@ -4,7 +4,7 @@
 
 ## You may have heard about Txt2tags, if you have it's a good thing 
 
-**Txt2tags means that your content is being created correctly.. by professionals.**
+**Txt2tags means that your content is being created correctly... by professionals.**
 
 In the past you may have heard of [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG) (what you see is what you get) and [HTML](http://en.wikipedia.org/wiki/HTML) formatting. Think of Txt2tags like a simplified WYSIWYG or HTML ... simplified in the best way.
 
@@ -32,12 +32,14 @@ Txt2tags is widely accepted by [developers and editors](https://duckduckgo.com/?
 
  * [PmWiki](http://wiki.txt2tags.org/index.php/Main/Txt2tagsAndPmWiki)  
  * [Dokuwiki](http://www.dokuwiki.org/plugin:txt2tags)
- * [LionWiki](http://wiki.txt2tags.org/demos/lionwiki-t2t/)
- * to be continued... (wordpress, drupal etc.)
+ * [LionWiki-t2t](http://wiki.txt2tags.org/demos/lionwiki-t2t/)
+ * [Wordpress](http://wiki.txt2tags.org/demos/wordpress)
+ * to be continued... (drupal, jekyll etc.)
 
-#### Other 
+#### Others 
 
- * TODO
+ * [txt2tags and php](http://txt2tags.org/txt2tags.form.php)
+ * [txt2tags and javascript](http://wiki.txt2tags.org/demos/txt2tagsjs)
 
 ## How do I write this Txt2tags stuff? 
 
@@ -65,25 +67,15 @@ Its php implementation targets only HTML but you can use it with several CMS, Bl
 
 Txt2tags can be written in a basic text editor (don't use Word) like Notepad on Windows, TextEdit on Mac OS X or Gedit on Linux-based distributions. You can write or copy and paste, but it's an easy way to write text that can quickly be turned into HTML. The web is written in HTML, so think of it like quick-start web developing for content editors. When you write in Txt2tags, you save the document with the file extension `.t2t`. More often than not, you'll never need to save a Txt2tags document, because you'll be using online tools.
 
-## Around the web 
-
- * TODO
-
 ## Take action! 
 
 Demand that your projects be built with Txt2tags.
 
----
-
-<h1>Markdown</h1>
-
-<h2>Test</h2>
-
-## Markdown support 
-
-Hey markdown users, we have heard you!
-
 <hr/>
+
+<h1>Markdown support</h1>
+
+## Hey markdown users, we have heard you! 
 
 You can reuse some of your markdown habits within txt2tags. In fact you 
 can almost reuse all of the markdown syntax:
@@ -100,9 +92,14 @@ change this. Look at this (look at the source in fact...):
 
  * Markdown links are supported as well. Here is a link to the [txt2tags website](http://www.txt2tags.org). Unfortunately, we can't use reference links in this little hack to support most of the markdown syntax. 
 
->  quotes are supported too.
 
-Of course, you can't use the single * or _ for emphasis and the double ones for strong like for markdown: technically it's possible, but in txt2tags we use double symbles, `**, //, -- and __` for respectively **bold**, *italic*, strike and underline. The ***bold italic*** style is also supported as a combination. We also use a double ` for `code`.
+>  And quotes are supported too.
+
+Of course, you can't use the single * or _ for emphasis and the double ones for strong like for markdown: technically it's possible, but in txt2tags we use double symbles, `**, //, -- and __` for respectively **bold**, *italic*, strike and underline. The ***bold italic*** style is also supported as a combination. We also use a double ``` for `code`. If some marks are not shown, it's a limitation of markdown or github, not **txt2tags** ;)
+
+## It sounds marvellous. How can I do this? 
+
+Just copy this .t2t file and keep the first lines beginning with `%!preproc` `%!postproc` or `%!postvoodoo`, it's the regular expression used to integrate markdown into txt2tags.
 
 <hr/>
 
