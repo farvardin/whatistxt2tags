@@ -1,12 +1,12 @@
 
 
 
-%-!target: md
-%-!options: --outfile README.md 
+%!target: md
+%!options: --outfile README.md 
 
 
-%!target: wiki
-%!options: --outfile README.wiki 
+%-!target: wiki
+%-!options: --outfile README.wiki 
 
 %-!target: html
 %-!options: --outfile README.html 
@@ -104,7 +104,7 @@ To that end, here are related syntax documents sorted by ease of use.
 
 
 
-[Txt2tags http://www.txt2tags.org/] is made by [Aurelio Jargas http://aurelio.net/], and [a team of several people txt2tags.org/team/]. 
+[Txt2tags http://www.txt2tags.org/] is made by [Aurelio Jargas http://aurelio.net/], and [a team of several people http://www.txt2tags.org/team/]. 
 
 Txt2tags is a document generator and a lightweight markup.
 

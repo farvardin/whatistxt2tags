@@ -50,7 +50,7 @@ To that end, here are related syntax documents sorted by ease of use.
 
 === About ===
 
-[http://www.txt2tags.org/ Txt2tags] is made by [http://aurelio.net/ Aurelio Jargas], and [txt2tags.org/team/ a team of several people]. 
+[http://www.txt2tags.org/ Txt2tags] is made by [http://aurelio.net/ Aurelio Jargas], and [http://www.txt2tags.org/team/ a team of several people]. 
 
 Txt2tags is a document generator and a lightweight markup.
 

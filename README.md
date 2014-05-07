@@ -6,7 +6,7 @@
 
 **Txt2tags means that your content is being created correctly.. by professionals.**
 
-In the past you may have heard of [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG) (what you see is what you get) and  [HTML](http://en.wikipedia.org/wiki/HTML) formatting. Think of Txt2tags like a simplified WYSIWYG or HTML ... simplified in the best way.
+In the past you may have heard of [WYSIWYG](http://en.wikipedia.org/wiki/WYSIWYG) (what you see is what you get) and [HTML](http://en.wikipedia.org/wiki/HTML) formatting. Think of Txt2tags like a simplified WYSIWYG or HTML ... simplified in the best way.
 
 When designers and developers approach a project, they build [styles](http://www.w3schools.com/css/) into the project. Those styles dictate how basic elements, like headers and links, will appear. The styles are applied throughout the entire project.
 
@@ -45,18 +45,21 @@ When developers talk about how to write something, they call it syntax.
 
 To that end, here are related syntax documents sorted by ease of use.
 
- * [Txt2tags syntax ]- Formatting guide
- * [Daring Fireball](http://daringfireball.net/projects/Txt2tags/syntax)- The original guide by the author
- * [Wikipedia](http://en.wikipedia.org/wiki/Txt2tags)- History and formatting guide
+ * [Txt2tags syntax](http://txt2tags.org/markup.html) - Formatting guide
+ * [Txt2tags user guide](http://txt2tags.org/userguide/) - The original guide by the author
+ * [Wikipedia](http://en.wikipedia.org/wiki/Txt2tags) - History and formatting guide
 
 ## About 
 
-[Txt2tags](http://www.txt2tags.org/) is made by [Aurelio Jargas](http://aurelio.net/), and [a team of several people](txt2tags.org/team/). 
+[Txt2tags](http://www.txt2tags.org/) is made by [Aurelio Jargas](http://aurelio.net/), and [a team of several people](http://www.txt2tags.org/team/). 
 
->  Txt2tags is a document generator and a lightweight markup.
->  It reads a text file with minimal markup such as **bold** and *italic*. Its python implementation can convert to several formats such as html, docbook, LaTeX, RTF, Man page, Creole, Wikipedia / MediaWiki, PmWiki, DokuWiki, MoinMoin, AsciiDoc...
->  It is very extensible and customisable, by using regex and preprocessors.
->  Its php implementation targets only HTML but you can use it with several CMS, Blog and wiki engines: Wordpress, Drupal, Dotclear, Dokuwiki, LionWiki... 
+Txt2tags is a document generator and a lightweight markup.
+
+It reads a text file with minimal markup such as **bold** and *italic*. Its python implementation can convert to several formats such as html, docbook, LaTeX, RTF, Man page, Creole, Wikipedia / MediaWiki, PmWiki, DokuWiki, MoinMoin, AsciiDoc...
+
+It is very extensible and customisable, by using regex and preprocessors.
+
+Its php implementation targets only HTML but you can use it with several CMS, Blog and wiki engines: Wordpress, Drupal, Dotclear, Dokuwiki, LionWiki... 
 
 ## I still don't understand 
 
@@ -72,12 +75,43 @@ Demand that your projects be built with Txt2tags.
 
 ---
 
+<h1>Markdown</h1>
+
+<h2>Test</h2>
+
+## Markdown support 
+
+Hey markdown users, we have heard you!
+
+<hr/>
+
+You can reuse some of your markdown habits within txt2tags. In fact you 
+can almost reuse all of the markdown syntax:
+
+ * Unordered lists in txt2tags begins with -, not *. But we can set-up 
+a `preprocessor` so it can handle the * in addition.
+ * Ordered lists in txt2tags begins with +, not 1. But again, we can
+change this. Look at this (look at the source in fact...):
+
+1. Here is a list
+1. Another
+1. Etc.
+
+
+ * Markdown links are supported as well. Here is a link to the [txt2tags website](http://www.txt2tags.org). Unfortunately, we can't use reference links in this little hack to support most of the markdown syntax. 
+
+>  quotes are supported too.
+
+Of course, you can't use the single * or _ for emphasis and the double ones for strong like for markdown: technically it's possible, but in txt2tags we use double symbles, `**, //, -- and __` for respectively **bold**, *italic*, strike and underline. The ***bold italic*** style is also supported as a combination. We also use a double ` for `code`.
+
+<hr/>
+
+## Info 
+
  * This page was made with [Txt2tags](http://txt2tags.org) 
 
  * Feel free to fork this page and edit, let's [make it better](https://github.com/farvardin/whatistxt2tags/). 
 
- * This page is based on some reasonings made for markdown, another tool similar to txt2tags: 
+ * This page is based on some reasonings made for markdown, another tool similar to txt2tags (but less powerful and expressive): 
   * https://github.com/kirkstrobeck/whatismarkdown/
-  * http://calepin.co/
-
 
