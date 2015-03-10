@@ -8,7 +8,8 @@
 %-!target: html
 %-!options: --outfile README.html 
 
-%% markdown support
+%%% markdown support
+%%  headings
 %!preproc: '^# (.*?)$' '= \1 ='
 %!preproc: '^## (.*?)$' '== \1 =='
 %!preproc: '^### (.*?)$' '=== \1 ==='
@@ -16,7 +17,11 @@
 %!preproc: '^##### (.*?)$' '===== \1 ====='
 %!preproc: '^\* (.*?)$' '- \1'
 %!preproc: '^(\d+)\. (.*?)$' '+ \2'
+%%  links
 %!preproc: '\[(.*?)\]\(\http://([^ ].*?)\)' '[\1 http://\2]'
+%% images
+%!preproc: '\!\[(.*?)\]\(([^ ].*?)\)' '[\2]'
+%%TODO  ![Texte alternatif](/chemin/vers/img.jpg "Titre optionnel")
 %!preproc: '^>'  '\t'
 %!postvoodoo: '(.*?)\n=[=*]{2,}='  '<h1>\1</h1>'
 %!preproc: '-[-*]{18,}-'  'T2TBAR'
@@ -81,7 +86,8 @@ using [Vim http://www.vim.org/] which has the best txt2tags support.
 
 ==== Online Tools ====
 
-
+//(that means it works in your browser)//
+ 
  - [PmWiki http://wiki.txt2tags.org/index.php/Main/Txt2tagsAndPmWiki]  
  - [Dokuwiki http://www.dokuwiki.org/plugin:txt2tags]
  - [LionWiki-t2t http://wiki.txt2tags.org/demos/lionwiki-t2t/]
@@ -89,7 +95,9 @@ using [Vim http://www.vim.org/] which has the best txt2tags support.
  - to be continued... (drupal, jekyll etc.)
 
 
-==== Others ====
+==== Other tools ====
+
+//it's mostly for developpers...//
 
 - [txt2tags and php http://txt2tags.org/txt2tags.form.php]
 - [txt2tags and javascript http://wiki.txt2tags.org/demos/txt2tagsjs]
@@ -152,7 +160,7 @@ Markdown support
 ## Hey markdown users, we have heard you!
 
 You can reuse some of your markdown habits within txt2tags. In fact you 
-can almost reuse all of the markdown syntax:
+can almost reuse all of the basic markdown syntax (and you can extend it endlessly):
 
 * Unordered lists in txt2tags begins with -, not *. But we can set-up 
 a ``preprocessor`` so it can handle the * in addition.
@@ -179,6 +187,13 @@ of __markdown__ or __github__, not **txt2tags** ;)
 Just copy this .t2t file and keep the first lines beginning with ``%!preproc`` ``%!postproc`` or 
 ``%!postvoodoo``, it's the regular expression used to integrate markdown into txt2tags.
 
+Also you can consider moving to the "**Txt2tags flavored Markdown**", a.k.a. "**Markdown Ultra**": it's most of the markdown syntax, which you can customise as you wish thanks to the power of txt2tag!
+
+There are already "Github flavored Markdown", Stackoverflow version of Markdown, MultiMarkdown, Pandoc Markdown, Markdown Extra, so why not a new Markdown derivative?
+
+So give it a try, you can still keep some of your markdown habits, you can experiment the txt2tags syntax, you can add some new fresh ideas (your document will still be a valid txt2tags file, not a derivative, not a different version, not an extension, not an extra of a limited syntax), and you'll soon wonder how you could have ever used markdown before! //(well, probably because it was widespread...)//
+
+
 
 
 
@@ -190,7 +205,7 @@ Just copy this .t2t file and keep the first lines beginning with ``%!preproc`` `
 
 - Feel free to fork this page and edit, let's [make it better https://github.com/farvardin/whatistxt2tags/]. 
 
-- This page is based on some reasonings made for markdown, another tool similar to txt2tags (but less powerful and expressive): 
+- This page is based on some reasonings made for markdown, called "What is Markdown?", another lightweight markup similar to txt2tags (but much less powerful and expressive): 
  - https://github.com/kirkstrobeck/whatismarkdown/
 
 % - http://calepin.co/
